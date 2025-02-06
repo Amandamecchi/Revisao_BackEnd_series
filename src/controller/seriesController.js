@@ -49,6 +49,17 @@ const router = {
         }
     },
 
+    updateSerie: (req, res) => {
+        try {
+            res.status(200).json(lista.updateSerie(req.params.id, req.body));
+        } catch (error) {
+            res.status(404).json({
+                message: "Erro ao atualizar",
+                error: error.message
+            });
+        }
+    },
+
     deleteSerie: (req, res) => {
         try {
             const serie = req.params.id;
@@ -61,10 +72,10 @@ const router = {
             res.status(404).json({
                 message: "Erro ao deletar série",
                 error: error.message,
-        });
+            });
+        }
     }
-}
- 
+
 
 
 };
