@@ -1,0 +1,23 @@
+{
+  "name": "revisao-backend",
+  "version": "1.0.0",
+  "description": "Atividade de revisão BackEnd - Séries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "CLS && nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Amanda",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/Amandamecchi/Revisao_BackEnd_series.git"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "uuid": "^11.0.5"
+  }
+}
