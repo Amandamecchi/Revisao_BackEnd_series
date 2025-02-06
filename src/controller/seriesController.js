@@ -1,7 +1,7 @@
 const Serie = require("../models/series");
 const SerieList = require("../models/serieList");
 
-const lista = nem SerieList();
+const lista = new SerieList();
 
 const serie1 = new Serie("Gossip Girl", "Josh Schwartz", "drama");
 lista.addSerie(serie1);
