@@ -1,12 +1,12 @@
-const Serie = require("../models/series");
-const SerieList = require("../models/serieList");
+const Serie = require("../models/Serie");
+const SerieList = require("../models/SerieList");
 
 const lista = new SerieList();
 
-const serie1 = new Serie("Gossip Girl", "Josh Schwartz", "drama");
+const serie1 = new Serie("Gossip Girl", 1, 2, "Josh Schwartz");
 lista.addSerie(serie1);
 
-lista.addSerie(new Serie("Brooklyn Nine-Nine", "Andy Samberg ", "ação"));
+lista.addSerie(new Serie("Brooklyn Nine-Nine", 1, 1, "Andy Samberg "));
 
 const router = {
     addSerie: (req, res) => {
@@ -27,8 +27,8 @@ const router = {
     },
     getAllSerie: (req, res) => {
         try {
-            const series = lista.getAllSerie();
-            res.status(200).json(series);
+            const serie = lista.getAllSerie();
+            res.status(200).json(serie);
         } catch (error) {
             res.status(404).json({
                 message: "Erro ao buscar séries",

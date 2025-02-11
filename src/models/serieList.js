@@ -1,17 +1,15 @@
-const { deleteSerie } = require("../controller/seriesController");
-
 class SerieList {
     constructor() {
-        this.series = [];
+        this.serie = [];
     }
     addSerie(serie) {
-        this.series.push(serie);
+        this.serie.push(serie);
     }
     getAllSeries() {
-        return this.series;
+        return this.serie;
     }
     getSeriesById(id) {
-        const serie = this.series.find((serie) => serie.id == id);
+        const serie = this.serie.find((serie) => serie.id == id);
         if (!serie) {
             throw new Error("Série não encontrada");
         }

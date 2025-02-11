@@ -16,6 +16,7 @@
     "url": "git remote add origin https://github.com/Amandamecchi/Revisao_BackEnd_series.git"
   },
   "dependencies": {
+    "api": "^6.1.2",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "nodemon": "^3.1.9",
